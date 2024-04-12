@@ -1,7 +1,7 @@
 ﻿
 # Resumo dos conteúdos do Estágio
 
-## Dia 01:
+# Dia 01:
 
 ### Comunicação em Projetos:
 A comunicação eficaz é crucial para o sucesso dos projetos. Envolve troca de informações entre todas as partes interessadas, utilizando os canais apropriados, garantindo entendimento mútuo e alinhamento de objetivos. Alguns canais de comunicação comuns incluem e-mails, reuniões, chats online e ferramentas de gerenciamento de projetos como o Trello ou o Asana.
@@ -18,7 +18,7 @@ Os fundamentos da agilidade são baseados nos princípios do Manifesto Ágil. El
 ### Organização em Equipes:
 Uma equipe bem organizada é fundamental para o sucesso de um projeto. Isso envolve a definição de estruturas claras de responsabilidade, estabelecimento de metas comuns, promoção de uma cultura de colaboração e confiança, e o reconhecimento das conquistas individuais e coletivas. Ferramentas como diagramas de Gantt, quadros Kanban e reuniões regulares podem ajudar na organização e acompanhamento das atividades da equipe.
 
-## Dia 02:
+# Dia 02:
 
 ### Carreira de Testes e QA (Garantia de Qualidade):
 A carreira de Testes e QA é fundamental no desenvolvimento de software. Os testadores são responsáveis por garantir que os aplicativos, sistemas ou produtos funcionem conforme esperado. Isso envolve a criação e execução de casos de teste para identificar bugs, falhas de funcionalidade ou desvios de requisitos. Existem vários tipos de testes, incluindo testes de unidade, integração, sistema, aceitação do usuário, entre outros.
@@ -38,7 +38,7 @@ A carreira de Testes e QA está em constante evolução, especialmente com o adv
 ### Certificações:
 Existem várias certificações disponíveis para profissionais de Testes e QA, como ISTQB (International Software Testing Qualifications Board) e CSTE (Certified Software Tester). Embora não sejam obrigatórias, podem ser vantajosas para avançar na carreira e demonstrar competência.
 
-## Dia 03:
+# Dia 03:
 
 ### Introdução ao QA e Testes:
 Definição de QA e sua importância no desenvolvimento de software. Explicação sobre o papel dos profissionais de QA e testes.
@@ -84,11 +84,11 @@ O teste de software é um processo fundamental no desenvolvimento de aplicativos
 
 # Dia 05:
 
-## Qualidade em projetos na prática:
+# Qualidade em projetos na prática:
 
 ## Estudo do conteúdo disponibilizado e discussão em grupo.
 
-# Gerando Qualidade com QA em um Projeto de Comércio Eletrônico
+## Gerando Qualidade com QA em um Projeto de Comércio Eletrônico
 
 Vamos imaginar um cenário em que uma equipe de desenvolvimento está criando um aplicativo de comércio eletrônico para uma loja online. Aqui está um caso prático de como o QA pode gerar qualidade nesse projeto:
 
