@@ -138,3 +138,59 @@ Um QA especializado em projetos de varejo pode realizar testes de desempenho em 
 ## Testes de Integração em Sistemas de Gestão de Estoque:
 Um QA pode realizar testes de integração em sistemas de gestão de estoque de varejo, verificando a comunicação entre diferentes módulos, a precisão das atualizações de estoque e a consistência das informações exibidas para os usuários. Essa abordagem contribui para a eficiência operacional, a redução de erros de inventário e a melhoria da experiência de compra.
 
+# Dia 06:
+
+# Fundamentos do Teste de Software (Back-End)
+
+O teste de software no back-end é fundamental para garantir que a lógica de negócios, a integração de dados e o processamento de informações ocorram corretamente no servidor ou na camada de back-end de um aplicativo ou sistema. Aqui estão alguns dos fundamentos do teste de software no back-end:
+
+## 1. Teste de Unidade
+
+Os testes de unidade verificam pequenas unidades de código (como funções ou métodos) para garantir que cada unidade funcione conforme o esperado. No back-end, isso envolve testar funções de processamento de dados, algoritmos de negócios e integrações com bancos de dados.
+
+## 2. Teste de Integração
+
+Este tipo de teste verifica se os diferentes componentes do sistema funcionam juntos corretamente. No back-end, isso envolve testar a comunicação entre os diferentes serviços, APIs e sistemas externos.
+
+## 3. Teste de Banco de Dados
+
+É crucial testar a integridade dos dados e a eficácia das consultas SQL ou operações de banco de dados no back-end. Isso inclui testes de CRUD (criar, ler, atualizar, excluir) para garantir que os dados sejam manipulados corretamente.
+
+## 4. Teste de Desempenho
+
+Os testes de desempenho avaliam a capacidade do sistema de lidar com uma carga de trabalho específica e de responder dentro de limites aceitáveis de tempo. No back-end, isso envolve medir a velocidade de processamento de solicitações, tempos de resposta do servidor e escalabilidade.
+
+## 5. Teste de Segurança
+
+Este tipo de teste avalia a segurança do sistema contra ameaças, como ataques de injeção de SQL, XSS (Cross-Site Scripting) e outras vulnerabilidades. No back-end, isso inclui validar a entrada de dados, autenticação e autorização adequadas e proteção contra vazamento de informações.
+
+## 6. Teste de Regressão
+
+O teste de regressão verifica se as alterações recentes no código não afetaram negativamente o funcionamento de partes já existentes do sistema. No back-end, isso envolve garantir que as alterações de código não quebrem funcionalidades existentes ou causem regressões inesperadas.
+
+## 7. Automação de Testes
+
+A automação de testes é crucial para testar de forma eficiente e repetitiva as funcionalidades do back-end. Frameworks de teste automatizado, como JUnit para Java, pytest para Python ou Jasmine para JavaScript, são comumente usados para isso.
+
+## 8. Monitoramento em Produção
+
+Além dos testes realizados durante o desenvolvimento, é essencial monitorar continuamente o desempenho e a integridade do sistema em produção. Isso inclui monitorar logs, métricas de desempenho e possíveis problemas de segurança.
+
+Esses são alguns dos principais fundamentos do teste de software no back-end. É importante aplicar uma abordagem abrangente que cubra todos esses aspectos para garantir a qualidade e a confiabilidade do sistema como um todo.
+
+# Pirâmide de Testes
+
+A pirâmide de testes é um conceito que descreve a distribuição ideal dos diferentes tipos de testes em um projeto de software. 
+
+## Testes Unitários
+
+Na base da pirâmide estão os testes unitários. Esses testes verificam unidades individuais de código, como funções ou métodos, de forma isolada.
+
+## Testes de Integração
+
+Acima dos testes unitários estão os testes de integração. Esses testes verificam a interação entre diferentes unidades de código, como módulos, serviços ou APIs.
+
+## Testes de Aceitação (ou Testes Funcionais)
+
+No topo da pirâmide estão os testes de aceitação ou testes funcionais. Esses testes verificam se o sistema atende aos requisitos de negócios e às expectativas do usuário.
+
