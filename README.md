@@ -222,3 +222,44 @@ Com base na tabela de Produtos, você deve:
 
 6) Realizar uma consulta que apresente produtos em que o nome contenha a palavra "jogo";
 
+# Resumo SQL
+
+## SQL (Structured Query Language) é uma linguagem de programação utilizada para gerenciar e manipular bancos de dados relacionais.
+
+## Principais componentes e comandos do SQL:
+
+1. **DDL (Data Definition Language)**:
+   - `CREATE`: Utilizado para criar novas tabelas, índices, visões e outros objetos de banco de dados.
+   - `ALTER`: Permite modificar a estrutura de objetos existentes no banco de dados.
+   - `DROP`: Remove objetos do banco de dados.
+
+2. **DML (Data Manipulation Language)**:
+   - `SELECT`: Recupera dados do banco de dados.
+   - `INSERT`: Adiciona novas linhas em uma tabela.
+   - `UPDATE`: Modifica dados existentes em uma tabela.
+   - `DELETE`: Remove linhas de uma tabela.
+
+3. **DCL (Data Control Language)**:
+   - `GRANT`: Concede permissões de acesso a usuários e papéis.
+   - `REVOKE`: Retira permissões de acesso concedidas anteriormente.
+
+4. **TCL (Transaction Control Language)**:
+   - `COMMIT`: Confirma as alterações feitas em uma transação.
+   - `ROLLBACK`: Desfaz as alterações feitas em uma transação.
+   - `SAVEPOINT`: Define um ponto no qual uma transação pode ser revertida.
+
+5. **Tipos de Dados**:
+   - `INTEGER`, `FLOAT`, `CHAR`, `VARCHAR`, `DATE`, `TIME`, etc.
+
+6. **Operadores**:
+   - `=`, `<>`, `>`, `<`, `>=`, `<=`: Operadores de comparação.
+   - `AND`, `OR`, `NOT`: Operadores lógicos.
+   - `IN`, `BETWEEN`, `LIKE`: Operadores para filtragem de dados.
+
+7. **Funções Agregadas**:
+   - `SUM`, `AVG`, `COUNT`, `MIN`, `MAX`: Funções para calcular estatísticas em conjuntos de dados.
+
+8. **Junções (Joins)**:
+   - `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, `FULL JOIN`: Utilizadas para combinar dados de duas ou mais tabelas com base em uma condição de associação.
+
+
