@@ -194,3 +194,31 @@ Acima dos testes unitários estão os testes de integração. Esses testes verif
 
 No topo da pirâmide estão os testes de aceitação ou testes funcionais. Esses testes verificam se o sistema atende aos requisitos de negócios e às expectativas do usuário.
 
+# Dia 07:
+
+## Exercitando SQL
+
+1) Realizar uma consulta que conte o número de registros na tabela.
+
+2) Realizar uma consulta para encontrar o usuário com o id 10.
+
+3) Realizar uma consulta para encontrar o usuário com o nome "Bruce Wayne".
+
+4) Realizar uma consulta para encontrar o usuário com o e-mail "ghost_silva@fantasma.com".
+
+5) Realizar uma consulta para deletar o usuário com e-mail "peterparker@marvel.com".
+
+Com base na tabela de Produtos, você deve:
+
+1) Realizar uma consulta que apresente produtos com descrição vazia;
+
+2) Realizar uma consulta que apresente produtos com a categoria "games";
+
+3) Realizar uma consulta que apresente produtos com preço "0";
+
+4) Realizar uma consulta que apresente produtos com o preço maior que "100.00";
+
+5) Realizar uma consulta que apresente produtos com o preço entre "1000.00" e "2000.00";
+
+6) Realizar uma consulta que apresente produtos em que o nome contenha a palavra "jogo";
+
