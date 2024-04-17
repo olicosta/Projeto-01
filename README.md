@@ -228,38 +228,306 @@ Com base na tabela de Produtos, você deve:
 
 ## Principais componentes e comandos do SQL:
 
-1. **DDL (Data Definition Language)**:
+1. # DDL (Data Definition Language):
    - `CREATE`: Utilizado para criar novas tabelas, índices, visões e outros objetos de banco de dados.
    - `ALTER`: Permite modificar a estrutura de objetos existentes no banco de dados.
    - `DROP`: Remove objetos do banco de dados.
 
-2. **DML (Data Manipulation Language)**:
+2. # DML (Data Manipulation Language):
    - `SELECT`: Recupera dados do banco de dados.
    - `INSERT`: Adiciona novas linhas em uma tabela.
    - `UPDATE`: Modifica dados existentes em uma tabela.
    - `DELETE`: Remove linhas de uma tabela.
 
-3. **DCL (Data Control Language)**:
+3. # DCL (Data Control Language):
    - `GRANT`: Concede permissões de acesso a usuários e papéis.
    - `REVOKE`: Retira permissões de acesso concedidas anteriormente.
 
-4. **TCL (Transaction Control Language)**:
+4. # TCL (Transaction Control Language):
    - `COMMIT`: Confirma as alterações feitas em uma transação.
    - `ROLLBACK`: Desfaz as alterações feitas em uma transação.
    - `SAVEPOINT`: Define um ponto no qual uma transação pode ser revertida.
 
-5. **Tipos de Dados**:
+5. # Tipos de Dados:
    - `INTEGER`, `FLOAT`, `CHAR`, `VARCHAR`, `DATE`, `TIME`, etc.
 
-6. **Operadores**:
+6. # Operadores:
    - `=`, `<>`, `>`, `<`, `>=`, `<=`: Operadores de comparação.
    - `AND`, `OR`, `NOT`: Operadores lógicos.
    - `IN`, `BETWEEN`, `LIKE`: Operadores para filtragem de dados.
 
-7. **Funções Agregadas**:
+7. # Funções Agregadas:
    - `SUM`, `AVG`, `COUNT`, `MIN`, `MAX`: Funções para calcular estatísticas em conjuntos de dados.
 
-8. **Junções (Joins)**:
+8. # Junções (Joins):
    - `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, `FULL JOIN`: Utilizadas para combinar dados de duas ou mais tabelas com base em uma condição de associação.
 
+   # Dia 08:
 
+   ## Exercitando NOSQL
+
+   # Exercício prático 01:
+
+1) Realizar uma consulta que conte o número de registros existentes.
+## R: db.usuarios.count()
+[16];
+
+2) Realizar uma consulta para alterar o usuário com o nome "Teste Start" para "Teste Finish".
+## R: db.usuarios.updateOne({ nome: "Teste Start" }, { $set: { nome: "Teste Finish" } })
+[
+  {
+    acknowledged: true,
+    modifiedCount: 1,
+    upsertedId: null,
+    upsertedCount: 0,
+    matchedCount: 1,
+  },
+];
+
+3) Realizar uma consulta para encontrar o usuário com o nome "Bruce Wayne".
+## R: db.usuarios.find({nome: "Bruce Wayne"})
+[
+  {
+    _id: "6620120225ba674053961ed0",
+    nome: "Bruce Wayne",
+    email: "brucewayne@gothan.com",
+  },
+];
+
+4) Realizar uma consulta para encontrar o usuário com o e-mail "ghost_silva@fantasma.com".
+## R: db.usuarios.find({email: "ghost_silva@fantasma.com"})
+[
+  {
+    _id: "6620124125ba674053961f08",
+    nome: "Ghost Silva",
+    email: "ghost_silva@fantasma.com",
+  },
+];
+
+5) Realizar uma consulta para deletar o usuário com e-mail "peterparker@marvel.com".
+## R: db.usuarios.updateOne({ nome: "Teste Start" }, { $set: { nome: "Teste Finish" } })
+[
+  {
+    acknowledged: true,
+    modifiedCount: 1,
+    upsertedId: null,
+    upsertedCount: 0,
+    matchedCount: 1,
+  },
+];
+
+# Exercício prático 02:
+
+1) Realizar uma consulta que apresente produtos com descrição vazia;
+## R: db.produtos.find({descricao: ""})
+[
+  {
+    _id: "6620144d25ba674053962033",
+    nome: "caneca chopp",
+    categoria: "utilitários",
+    preco: 25.5,
+    descricao: "",
+  },
+  {
+    _id: "6620144d25ba674053962034",
+    nome: "copo grande térmico",
+    categoria: "utilitários",
+    preco: 35.9,
+    descricao: "",
+  },
+];
+
+2) Realizar uma consulta que apresente produtos com a categoria "games";
+## R: db.produtos.find({categoria: "games"})
+[
+  {
+    _id: "6620147f24c0bffe2d371193",
+    nome: "mouse gamer",
+    categoria: "games",
+    preco: 101,
+    descricao: "Mouse com leds.",
+  },
+  {
+    _id: "6620147f24c0bffe2d371194",
+    nome: "teclado gamer",
+    categoria: "games",
+    preco: 99,
+    descricao: "Teclado com leds.",
+  },
+  {
+    _id: "6620147f24c0bffe2d371195",
+    nome: "monitor gamer",
+    categoria: "games",
+    preco: 1500,
+    descricao:
+      "Monitor grande para jogar.",
+  },
+  {
+    _id: "6620147f24c0bffe2d371196",
+    nome: "jogo batman",
+    categoria: "games",
+    preco: 150,
+    descricao:
+      "Jogo do Batman para PC.",
+  },
+  {
+    _id: "6620147f24c0bffe2d371197",
+    nome: "jogo tomb raider",
+    categoria: "games",
+    preco: 100,
+    descricao:
+      "Jogo Tomb Raider para PC.",
+  },
+  {
+    _id: "6620147f24c0bffe2d371198",
+    nome: "jogo spider-man",
+    categoria: "games",
+    preco: 200,
+    descricao:
+      "Jogo Spider-man para PS4.",
+  },
+  {
+    _id: "6620147f24c0bffe2d371199",
+    nome: "jogo pac-man",
+    categoria: "games",
+    preco: 180,
+    descricao:
+      "Jogo Pac-man para Xbox One.",
+  },
+];
+
+3) Realizar uma consulta que apresente produtos com preço "0";
+## R: db.produtos.find({preco: 0})
+[
+  {
+    _id: "662014ae25ba674053962052",
+    nome: "adesivo",
+    categoria: "utilitários",
+    preco: 0,
+    descricao:
+      "desivo com precificação para produtos.",
+  },
+  {
+    _id: "662014ae25ba674053962053",
+    nome: "caneca",
+    categoria: "utilitários",
+    preco: 0,
+    descricao: "Caneca para café.",
+  },
+];
+
+4) Realizar uma consulta que apresente produtos com o preço maior que "100.00";
+## R: db.produtos.find({preco: {$gt: 100.00}})
+[
+  {
+    _id: "662014e824c0bffe2d3711b1",
+    nome: "mouse gamer",
+    categoria: "games",
+    preco: 101,
+    descricao: "Mouse com leds.",
+  },
+  {
+    _id: "662014e824c0bffe2d3711b3",
+    nome: "monitor gamer",
+    categoria: "games",
+    preco: 1500,
+    descricao:
+      "Monitor grande para jogar.",
+  },
+  {
+    _id: "662014e824c0bffe2d3711b4",
+    nome: "jogo batman",
+    categoria: "games",
+    preco: 150,
+    descricao:
+      "Jogo do Batman para PC.",
+  },
+  {
+    _id: "662014e824c0bffe2d3711b6",
+    nome: "jogo spider-man",
+    categoria: "games",
+    preco: 200,
+    descricao:
+      "Jogo Spider-man para PS4.",
+  },
+  {
+    _id: "662014e824c0bffe2d3711b7",
+    nome: "jogo pac-man",
+    categoria: "games",
+    preco: 180,
+    descricao:
+      "Jogo Pac-man para Xbox One.",
+  },
+  {
+    _id: "662014e824c0bffe2d3711b8",
+    nome: "guarda-roupas lady bug",
+    categoria: "casa",
+    preco: 2500,
+    descricao:
+      "Guarda-roupas gigante da Lady Bug.",
+  },
+  {
+    _id: "662014e824c0bffe2d3711b9",
+    nome: "cama solteiro",
+    categoria: "casa",
+    preco: 1800,
+    descricao: "Cama box solteiro.",
+  },
+];
+
+5) Realizar uma consulta que apresente produtos com o preço entre "1000.00" e "2000.00";
+## R: db.produtos.find({preco: {$gt: 1000.00, $lt: 2000.00}})
+[
+  {
+    _id: "6620151d25ba674053962073",
+    nome: "monitor gamer",
+    categoria: "games",
+    preco: 1500,
+    descricao:
+      "Monitor grande para jogar.",
+  },
+  {
+    _id: "6620151d25ba674053962079",
+    nome: "cama solteiro",
+    categoria: "casa",
+    preco: 1800,
+    descricao: "Cama box solteiro.",
+  },
+];
+
+6) Realizar uma consulta que apresente produtos em que o nome contenha a palavra "jogo".
+## R: db.produtos.find({nome: /jogo/})
+[
+  {
+    _id: "6620158024c0bffe2d3711d2",
+    nome: "jogo batman",
+    categoria: "games",
+    preco: 150,
+    descricao:
+      "Jogo do Batman para PC.",
+  },
+  {
+    _id: "6620158024c0bffe2d3711d3",
+    nome: "jogo tomb raider",
+    categoria: "games",
+    preco: 100,
+    descricao:
+      "Jogo Tomb Raider para PC.",
+  },
+  {
+    _id: "6620158024c0bffe2d3711d4",
+    nome: "jogo spider-man",
+    categoria: "games",
+    preco: 200,
+    descricao:
+      "Jogo Spider-man para PS4.",
+  },
+  {
+    _id: "6620158024c0bffe2d3711d5",
+    nome: "jogo pac-man",
+    categoria: "games",
+    preco: 180,
+    descricao:
+      "Jogo Pac-man para Xbox One.",
+  },
+];
