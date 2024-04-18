@@ -199,16 +199,27 @@ No topo da pirâmide estão os testes de aceitação ou testes funcionais. Esses
 ## Exercitando SQL
 
 1) Realizar uma consulta que conte o número de registros na tabela.
+## R: SELECT COUNT(*) AS total_registros FROM usuarios;
+16
 
 2) Realizar uma consulta para encontrar o usuário com o id 10.
+## R: SELECT * FROM usuarios WHERE id = 10;
+10	"Lucca Ryan Jesus"	"lucca_ryan_jesus@imoveisvillani.com.br"
 
 3) Realizar uma consulta para encontrar o usuário com o nome "Bruce Wayne".
+## R: SELECT * FROM usuarios WHERE nome = 'Bruce Wayne';
+13	"Bruce Wayne"	"brucewayne@gothan.com"
 
 4) Realizar uma consulta para encontrar o usuário com o e-mail "ghost_silva@fantasma.com".
+## R: SELECT * FROM usuarios WHERE email = 'ghost_silva@fantasma.com';
+4	"Ghost Silva"	"ghost_silva@fantasma.com"
 
 5) Realizar uma consulta para deletar o usuário com e-mail "peterparker@marvel.com".
+## R: DELETE FROM usuarios WHERE email = 'peterparker@marvel.com';
+DELETE 0
 
-Com base na tabela de Produtos, você deve:
+
+Com base na tabela de Produtos:
 
 1) Realizar uma consulta que apresente produtos com descrição vazia;
 
