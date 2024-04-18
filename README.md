@@ -542,3 +542,6 @@ Com base na tabela de Produtos:
       "Jogo Pac-man para Xbox One.",
   },
 ];
+# Dia 09:
+
+## Fundamento da Segurança da Informação:
